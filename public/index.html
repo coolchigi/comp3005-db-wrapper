@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Search</title>
+    <script defer src="client.js"></script>
+  </head>
+  <body>
+    <div class="search_wrapper">
+      Check for user by username:
+      <input type="text" size="40" name="keyword" id="keyword" />
+      <button
+        id="search"
+        onclick="search_customers()"
+        style="margin-bottom: 50px"
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+    <div class="search_wrapper">
+      Search Product by Category:
+      <input type="text" size="40" name="product" id="product" />
+      <button
+        id="search"
+        onclick="search_products()"
+        style="margin-bottom: 50px"
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+    <div class="search_wrapper hidden">
+      Show list favorite products :
+      <input
+        placeholder="Enter user name"
+        type="text"
+        size="40"
+        name="product"
+        id="user_id"
+      />
+      <button
+        id="search"
+        onclick="search_fproducts()"
+        style="margin-bottom: 50px"
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+    <div class="search_wrapper">
+      Show available products:
+      <input type="text" size="40" name="product" id="sname" />
+      <button
+        id="search"
+        onclick="show_products()"
+        style="margin-bottom: 50px"
+        type="button"
+      >
+        Show
+      </button>
+    </div>
+    <div id="item_details"></div>
+    <hr />
+    <div class="flex-container" id="flex-container">
+      <div id="search_results"></div>
+      <div id="product_results"></div>
+      <div id="many"></div>
+      <div id="products"></div>
+    </div>
+  </body>
+</html>
